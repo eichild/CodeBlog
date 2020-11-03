@@ -1,2 +1,2 @@
 # CodeBlog
-Blog construído para aprendizado do Spring Boot 
+Blog construído utilizando Spring boot
