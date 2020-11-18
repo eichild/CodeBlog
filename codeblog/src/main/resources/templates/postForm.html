@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns:th="https://www.thymeleaf.org/">
+<html lang="pt-br" xmlns:th="https://thymeleaf.org/">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!--Css-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
 
     <title>Code Blog</title>
 </head>
@@ -26,7 +30,7 @@
             </nav>
 
             <div>
-<!--                <th:block th:include="mensagemValidacao"></th:block>-->
+                <th:block th:include="mensagemValidacao"></th:block>
                 <form method="post">
                     <div class="form-group">
                         <input type="text" class="form-control" name="titulo" placeholder="Título *">
@@ -50,4 +54,11 @@
     </section>
 </main>
 </body>
+    <script>
+        $('#summernote').summernote({
+            placeholder: 'Texto *',
+            tabSize: 2,
+            height: 300
+        })
+    </script>
 </html>
