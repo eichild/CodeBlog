@@ -13,6 +13,7 @@ public class CodeblogImpl implements CodeblogService {
 
     @Autowired
     CodeblogRepository codeblogRepository;
+
     @Override
     public List<Post> FindAll() {
         return codeblogRepository.findAll();

@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="TB_POST")
+@Table(name = "TB_POST")
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,7 +24,7 @@ public class Post {
 
     @NotNull
     @Lob
-    private  String texto;
+    private String texto;
 
     public long getId() {
         return id;
